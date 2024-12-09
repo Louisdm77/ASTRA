@@ -30,24 +30,35 @@ const Nav = () => {
     setResource(!resource);
   };
 
+  const handleMenuToggle = () => {
+    setMenu(true); // Open the menu
+    setAstra(false); // Close Astra dropdown
+    setAstram(false); // Close Astram dropdown
+    setBuilder(false); // Close Builder dropdown
+    setResource(false); // Close Resources dropdown
+  };
   return (
     <nav className="w-full ">
       <div className="flex justify-between items-center  p-6">
         <img src={Astra} alt="Astra Logo" className="h-10" />
 
-        <div className="bg-gray-100 bg-opacity-20 p-1 border border-dotted border-r-none">
+        <div className="bg-gray-100 bg-opacity-20 p-1 ">
           <button
-            className="w-8 h-8 flex items-center justify-center"
+            className="w-6 h-6 flex items-center justify-center"
             aria-label="Menu"
-            onClick={() => setMenu(true)}
+            onClick={() => {
+              handleMenuToggle();
+            }}
             style={{ display: !menu ? "block" : "none" }}
           >
             <RxHamburgerMenu className="w-full h-full text-white" />
           </button>
           <button
-            className="w-8 h-8 flex items-center justify-center"
+            className="w-6 h-6 flex items-center justify-center"
             aria-label="Menu"
-            onClick={() => setMenu(false)}
+            onClick={() => {
+              setMenu(false);
+            }}
             style={{ display: menu ? "block" : "none" }}
           >
             <LiaTimesSolid className="w-full h-full text-white" />
@@ -56,18 +67,18 @@ const Nav = () => {
       </div>
 
       {menu && (
-        <div className="bg-gray-100 w-full p-6">
-          <a href="#" className="flex text-blue-600 text-black">
+        <div className="bg-gray-100 w-full p-6 absolute z-50">
+          <a href="#" className="flex text-black-600 text-black">
             Starter Template
           </a>
 
           <div className="flex justify-between items-center mt-4 w-full">
             <button
               onClick={handleAstra}
-              className="flex items-center justify-between w-full"
+              className="flex items-center justify-between w-full hover:text-blue-800"
             >
               <span>Astra</span>
-              <IoIosArrowDown className="ml-2" />
+              <IoIosArrowDown className="ml-2 text-2xl" />
             </button>
           </div>
 
@@ -78,11 +89,11 @@ const Nav = () => {
                   <IoIosArrowForward />
                   <div className="flex justify-between items-center w-full">
                     <button
-                      className="flex items-center justify-between w-full"
+                      className="flex items-center justify-between w-full hover:text-blue-800"
                       onClick={handleAstram}
                     >
                       <span>Astra</span>
-                      <IoIosArrowDown className="ml-2" />
+                      <IoIosArrowDown className="ml-2 text-2xl" />
                     </button>
                   </div>
                 </li>
@@ -119,11 +130,11 @@ const Nav = () => {
               <ul className="flex items-center leading-8 ml-2 mt-2">
                 <IoIosArrowForward />
                 <button
-                  className="flex justify-between items-center w-full"
+                  className="flex justify-between items-center hover:text-blue-800 w-full"
                   onClick={handleBuilder}
                 >
                   <span>Builder</span>
-                  <IoIosArrowDown className="ml-2" />
+                  <IoIosArrowDown className="ml-2 text-2xl" />
                 </button>
               </ul>
               {builder && (
@@ -149,13 +160,13 @@ const Nav = () => {
             <span>Pro</span>
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 ">
             <button
-              className="flex justify-between items-center w-full"
+              className="flex justify-between items-center w-full hover:text-blue-800"
               onClick={handleResource}
             >
               <span>Resources</span>
-              <IoIosArrowDown className="ml-2 text-lg" />
+              <IoIosArrowDown className="ml-2 text-lg text-2xl" />
             </button>
 
             {resource && (
@@ -192,6 +203,13 @@ const Nav = () => {
                 </li>
               </ul>
             )}
+          </div>
+
+          <div className="flex items-center leading-8 mt-4 pointer">
+            <span>Pricing</span>
+          </div>
+          <div className="flex items-center leading-8 mt-4 drop-shadow-xl font-bold text-gray-900">
+            <span>Get Started</span>
           </div>
         </div>
       )}
