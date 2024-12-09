@@ -68,7 +68,7 @@ const Nav = () => {
       </div>
 
       {menu && (
-        <div className="bg-gray-100 w-full p-6 absolute z-50 animate__animated animate__fadeInDownBig">
+        <div className="bg-gray-100 w-full p-6 absolute z-50 animate__animated animate__fadeInDownBig_faster">
           <a href="#" className="flex text-black-600 text-black">
             Starter Template
           </a>

@@ -3,7 +3,7 @@ import Hero from "../Components/hero.tsx";
 
 const Header = () => {
   return (
-    <div className=" h-[500px] bg-gradient-to-r from-blue-700 to-purple-500">
+    <div className=" h-auto bg-gradient-to-r from-blue-700 to-purple-500 md:hidden ">
       <Nav />
       <Hero />
     </div>
