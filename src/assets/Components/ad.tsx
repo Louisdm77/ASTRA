@@ -2,7 +2,7 @@ const Ad = () => {
   return (
     <div>
       <div>
-        <h2 className="font-bold mt-8 text-gray-900 text-2xl text-center">
+        <h2 className="font-bold mt-8 p-4 text-gray-900 text-2xl text-center">
           You Get Lightweight & High- Performance Websites in Minutes - Zero
           Coding <br /> Required
         </h2>
