@@ -3,6 +3,7 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
+import "animate.css";
 
 const Nav = () => {
   const [astra, setAstra] = useState(false); //main astra dropdown
@@ -67,7 +68,7 @@ const Nav = () => {
       </div>
 
       {menu && (
-        <div className="bg-gray-100 w-full p-6 absolute z-50">
+        <div className="bg-gray-100 w-full p-6 absolute z-50 animate__animated animate__fadeInDownBig">
           <a href="#" className="flex text-black-600 text-black">
             Starter Template
           </a>
