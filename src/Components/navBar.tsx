@@ -1,9 +1,9 @@
-import Astra from "../Images/Astra.png";
+import Astra from "../assets/Images/Astra.png";
+
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
-import "animate.css";
 
 const Nav = () => {
   const [astra, setAstra] = useState(false); //main astra dropdown
@@ -172,7 +172,7 @@ const Nav = () => {
 
             {resource && (
               <ul className="mt-2">
-                <li className="flex items-center leading-8 ml-2 mt-2">
+                <li className="flex items-center leading-8 ml-2 mt-2 font-bold">
                   <IoIosArrowForward />
                   <div className="flex justify-between items-center w-full">
                     <span>Blog</span>

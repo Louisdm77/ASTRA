@@ -7,9 +7,9 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { LuPenTool } from "react-icons/lu";
 import { BsCupHot } from "react-icons/bs";
 import { FaCalendarDay } from "react-icons/fa";
-import svg1 from "../Images/svg1.svg";
-import svg2 from "../Images/svg2.svg";
-import img1 from "../Images/astra-home-image-1.webp";
+import svg1 from "../assets/Images/svg1.svg";
+import svg2 from "../assets/Images/svg2.svg";
+import img1 from "../assets/Images/astra-home-image-1.webp";
 
 const Hero = () => {
   return (

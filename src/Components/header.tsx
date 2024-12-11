@@ -1,5 +1,5 @@
-import Nav from "../Components/navigation.tsx";
-import Hero from "../Components/hero.tsx";
+import Nav from "./navBar.tsx";
+import Hero from "./hero.tsx";
 
 const Header = () => {
   return (

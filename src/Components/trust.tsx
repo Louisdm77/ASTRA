@@ -1,4 +1,4 @@
-import woman from "../Images/woman.png";
+import woman from "../assets/Images/woman.png";
 const Trust = () => {
   return (
     <div className="p-3">
