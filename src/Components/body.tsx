@@ -7,6 +7,7 @@ const Body = () => {
       <Ad />
       <Trust />
       <Carousel />
+      <hr />
     </div>
   );
 };
