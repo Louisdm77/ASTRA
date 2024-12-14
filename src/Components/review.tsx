@@ -3,7 +3,7 @@ import Wordpress from "../assets/Images/wordpress.svg";
 const Review = () => {
   return (
     <div className="flex px-2">
-      <div className="w-[50%] ">
+      <div className="w-[50%] h-[250px]">
         <div className="h-full">
           <img src={Trust} alt="" className="h-[50%] w-full object-cover" />
           <div className="flex  justify-center text-yellow-400">

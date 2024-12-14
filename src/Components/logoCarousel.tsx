@@ -8,67 +8,67 @@ import "../Components/carousel.css";
 
 const Logos = () => {
   return (
-    <div className="flex  scroll justify-between">
-      <div className="h-[200px] flex caro-cont">
+    <div className="flex  scroll justify-between ">
+      <div className="h-[80px] flex caro-cont">
         <img
           src={Barclays}
           alt="nissan"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Vodaphone}
           alt="vodaphone"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Toyota}
           alt="toyota"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Olx}
           alt="olx"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Vogue}
           alt="vogue"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Toto}
           alt="toto"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Barclays}
           alt="nissan"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Vodaphone}
           alt="vodaphone"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Toyota}
           alt="toyota"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Olx}
           alt="olx"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Vogue}
           alt="vogue"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
         <img
           src={Toto}
           alt="toto"
-          className="h-full w-[70%] object-contain mr-5"
+          className="h-full w-[90%] object-contain mr-5"
         />
       </div>
     </div>
