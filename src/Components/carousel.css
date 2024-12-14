@@ -46,26 +46,26 @@
 
 .caro-cont {
   position: relative;
-  animation: scrl 12s linear infinite;
+  animation: scrl 20s linear infinite;
 }
 
 @keyframes scrl {
   0% {
-    transform: translateX(100%); /* Start off-screen to the right */
+    transform: translateX(100%);
   }
   10% {
-    transform: translateX(0); /* Bring the first image into view */
+    transform: translateX(0);
   }
-  25% {
-    transform: translateX(-70%); /* Move first image out */
+  30% {
+    transform: translateX(-100%);
   }
   50% {
-    transform: translateX(-100%); /* Move second image into view */
+    transform: translateX(-200%);
   }
-  75% {
-    transform: translateX(-150%); /* Move third image into view */
+  70% {
+    transform: translateX(-300%);
   }
   100% {
-    transform: translateX(-300%); /* Fully scroll left to show next set */
+    transform: translateX(-500%);
   }
 }
