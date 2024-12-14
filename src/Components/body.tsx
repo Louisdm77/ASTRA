@@ -2,6 +2,7 @@ import Ad from "./ad";
 import Trust from "./trust";
 import Carousel from "./carousel1";
 import Review from "./review";
+import Logos from "./logoCarousel";
 const Body = () => {
   return (
     <div className="md:hidden">
@@ -9,6 +10,7 @@ const Body = () => {
       <Trust />
       <Carousel />
       <Review />
+      <Logos />
     </div>
   );
 };

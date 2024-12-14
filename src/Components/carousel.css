@@ -37,3 +37,35 @@
     opacity: 0;
   }
 }
+
+.scroll {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.caro-cont {
+  position: relative;
+  animation: scrl 12s linear infinite;
+}
+
+@keyframes scrl {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  10% {
+    transform: translateX(0); /* Bring the first image into view */
+  }
+  25% {
+    transform: translateX(-70%); /* Move first image out */
+  }
+  50% {
+    transform: translateX(-100%); /* Move second image into view */
+  }
+  75% {
+    transform: translateX(-150%); /* Move third image into view */
+  }
+  100% {
+    transform: translateX(-300%); /* Fully scroll left to show next set */
+  }
+}
