@@ -3,9 +3,9 @@ import Wordpress from "../assets/Images/wordpress.svg";
 const Review = () => {
   return (
     <div className="flex px-2">
-      <div className="w-[50%] h-[250px]">
+      <div className="w-[50%] h-[150px]">
         <div className="h-full">
-          <img src={Trust} alt="" className="h-[50%] w-full object-cover" />
+          <img src={Trust} alt="" className="h-[40%] w-full object-cover" />
           <div className="flex  justify-center text-yellow-400">
             <div className="flex items-start">
               <svg
@@ -68,7 +68,7 @@ const Review = () => {
           <img
             src={Wordpress}
             alt=""
-            className="h-[50%] w-full object-contain"
+            className="h-[40%] w-full object-contain"
           />
           <div className="flex items-center justify-center text-yellow-400">
             <div className="flex items-center">

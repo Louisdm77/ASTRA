@@ -46,7 +46,7 @@
 
 .caro-cont {
   position: relative;
-  animation: scrl 20s linear infinite;
+  animation: scrl 30s linear infinite;
 }
 
 @keyframes scrl {
